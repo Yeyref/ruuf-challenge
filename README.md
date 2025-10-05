@@ -11,6 +11,12 @@ El objetivo es determinar **la cantidad máxima de paneles solares que caben en 
 
 La idea es encontrar la mejor forma de acomodarlos sin cortar paneles ni superponerlos.
 
+## Archivos del proyecto
+
+- `script.py`: código principal con el algoritmo de cálculo  
+- `test_cases.json`: archivo con los casos de prueba  
+- `README.md`: documentación del proyecto
+
 ##  Lo que descubrí
 
 Al principio pensé que bastaba con probar dos orientaciones:  
@@ -60,7 +66,7 @@ cantidad = calculate_panels(3, 5, 1, 2)
 print(f"Caben {cantidad} paneles")  
 # Output: 7
 ```
-##Casos de prueba
+## Casos de prueba
 Techo (x×y)	Panel (a×b)	Resultado esperado	Obtenido	
 2×4	            1×2	            4	            4        
 3×5	            1×2	            7	            7	      
@@ -70,14 +76,10 @@ También agregué casos extremos, como paneles mas grandes que el techo o techos
 
 ## Caracteristicas importantes
 
-Los paneles no se cortan ni se superponen.
-
-Solo se permiten rotaciones de 0° y 90°.
-
-El techo se puede dividir en un máximo de dos zonas (horizontal o verticalmente).
-
-Se busca el número máximo de paneles completos posibles.
-
+- Los paneles no se cortan ni se superponen  
+- Solo se permiten rotaciones de 0° y 90°  
+- El techo puede dividirse en máximo dos zonas (horizontal o vertical)  
+- Se busca el número máximo de paneles completos posibles
 
 ## Lo que aprendí
 
@@ -88,7 +90,7 @@ Ademas, validar con casos extremos ayuda a encontrar errores que a primera vista
 Yeferson Rosales
 
 Proyecto desarrollado como parte del proceso de selección de Ruuf Solar.
-Cada estrategia fue analizada, probada y validada por mi, IA y la calculadora.
+Cada estrategia fue analizada, probada y validada cuidadosamente.
 Estoy preparado para explicar cada decisión de diseño y optimización.
 
 PD: Ademas del codigo principal, incluí un archivo de pruebas unitarias con todos los casos descritos anteriormente.

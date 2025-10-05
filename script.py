@@ -3,18 +3,6 @@ import json
 
 def calculate_panels(panel_width: int, panel_height: int, 
                     roof_width: int, roof_height: int) -> int:
-    """
-    Calcula la cantidad máxima de paneles solares que caben en un techo.
-    
-    Arguments:
-        panel_width: Ancho del panel
-        panel_height: Alto del panel
-        roof_width: Ancho del techo
-        roof_height: Alto del techo
-    
-    Returns:
-        Cantidad máxima de paneles
-    """
     # orden de los parametros
     x = roof_width
     y = roof_height
